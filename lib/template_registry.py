@@ -155,8 +155,8 @@ class TemplateRegistry(object):
         '''Converts difficulty to target'''
         if settings.COINDAEMON_ALGO == 'scrypt' or 'scrypt-jane':
             diff1 = 0x0000ffff00000000000000000000000000000000000000000000000000000000
-        elif settings.COINDAEMON_ALGO == 'quark':
-            diff1 = 0x000000ffff000000000000000000000000000000000000000000000000000000
+        elif settings.COINDAEMON_ALGO == 'heavy':
+            diff1 = 0x0000ffff00000000000000000000000000000000000000000000000000000000
         else:
             diff1 = 0x00000000ffff0000000000000000000000000000000000000000000000000000
 
